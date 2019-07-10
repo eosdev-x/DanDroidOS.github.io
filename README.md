@@ -1,3 +1,3 @@
 
-# DanDroidOS.github.io
+# eosdev-x.github.io
 
