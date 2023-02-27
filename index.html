@@ -2,12 +2,12 @@
 <html>
 
 <head>
-  <title>My Landing Page</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eosdev.eth &#9889</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
-      background-color: #e0e5ec;
+      background-color: #dedede;
       padding: 50px;
       display: flex;
       flex-direction: column;
@@ -18,17 +18,17 @@
     }
 
     h1 {
-      background-color: #f0f0f0;
+      background-color: #dedede;
       border-radius: 50px;
       border: none;
-      box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
-      color: #333;
-      padding: 20px;
+      box-shadow: 5px 5px 10px #bdbdbd, -5px -5px 10px #ffffff;
+      color: #2C001E;
+      padding: 2rem;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
-      margin-top: 20px;
+      font-size: 2rem;
+      margin-top: 1rem;
       transition: all 0.3s ease-in-out;
     }
 
@@ -37,29 +37,40 @@
       text-align: justify;
     }
 
-    /* Button styles */
+    h2 {
+      margin-bottom: 1rem;
+      text-align: justify;
+      color: #2C001E;
+      margin-top: 35px;
+    }
+
+    .btc {
+      margin-bottom: 100px;
+    }
+
+    /* Dark mode button styles */
     .button {
-      background-color: #f0f0f0;
+      background-color: #dedede;
       border-radius: 50px;
       border: none;
-      box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
-      color: #333;
+      box-shadow: 5px 5px 10px #bdbdbd, -5px -5px 10px #ffffff;
+      color: #2C001E;
       cursor: pointer;
-      padding: 20px;
+      padding: 1rem;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
-      margin-top: 20px;
+      font-size: 1.2rem;
+      margin-top: 2rem;
       transition: all 0.3s ease-in-out;
     }
 
     .button:hover {
-      box-shadow: inset 5px 5px 10px #cfcfcf, inset -5px -5px 10px #ffffff;
-      color: #fff;
+      box-shadow: inset 5px 5px 10px #bdbdbd, inset -5px -5px 10px #ffffff;
+      color: #2C001E;
     }
 
-    /* Neumorphism styles for buttons */
+    /* Social button styles */
     .social-container {
       display: flex;
       justify-content: center;
@@ -68,72 +79,69 @@
     }
 
     .social-container button {
-      border-radius: 50px;
+      background-color: #dedede;
+      border-radius: 150px;
       border: none;
-      box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
-      color: #333;
+      box-shadow: 5px 5px 10px #bdbdbd, -5px -5px 10px #ffffff;
+      color: #2C001E;
       cursor: pointer;
-      width: 100px;
-      height: 100px;
-      margin: 25px;
-      padding: 20px;
+      width: 120px;
+      height: 120px;
+      margin: 1.2rem;
+      padding: 1rem;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
-      margin-top: 20px;
+      font-size: 1.2rem;
+      margin-top: 2rem;
       transition: all 0.3s ease-in-out;
     }
 
     .social-container button:hover {
-      box-shadow: inset 5px 5px 10px #cfcfcf, inset -5px -5px 10px #ffffff;
-      color: #fff;
+      box-shadow: inset 5px 5px 10px #bdbdbd, inset -5px -5px 10px #ffffff;
+      color: #2C001E;
     }
 
     .social-container a {
       text-decoration: none;
-      color: #333;
+      color: #2C001E;
     }
 
     /* Dark mode styles */
     body.dark-mode {
       background-color: #333;
-      color: #f0f0f0;
+      color: #F1E8F0;
     }
 
     .dark-mode h1 {
-      color: #f0f0f0;
+      color: #F1E8F0;
     }
 
     .dark-mode p {
-      color: #f0f0f0;
+      color: #F1E8F0;
     }
 
     .dark-mode .button {
       background-color: #333;
-      color: #f0f0f0;
+      color: #F1E8F0;
       box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
     }
-    
+
     .dark-mode h1 {
       background-color: #333;
-      color: #f0f0f0;
+      color: #F1E8F0;
       box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
     }
 
     .dark-mode .button:hover {
       box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #4d4d4d;
-      color: #f0f0f0;
+      color: #F1E8F0;
     }
 
-    .dark-mode .social-container a {
-      text-decoration: none;
-      color: #f0f0f0;
-    }
-
-    .dark-mode .social-container button {
+    .dark-mode .social-container .link {
       background-color: #333;
-      color: #f0f0f0;
+      color: #F1E8F0;
+      text-decoration: none;
       box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #4d4d4d;
     }
 
@@ -142,10 +150,59 @@
       color: #f0f0f0;
     }
 
+    .dark-mode h2 {
+      margin-bottom: 1rem;
+      text-align: justify;
+      color: #F1E8F0;
+    }
+
     /* Logo styles */
     .logo {
       height: 100px;
-      margin-right: 10px;
+      margin-right: .5rem;
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .button {
+        font-size: 14px;
+      }
+
+      .social-container {
+        font-size: 0.8rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .social-container button {
+        font-size: 0.8rem;
+        padding: 1rem;
+        width: 100px;
+        height: 100px
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .button {
+        font-size: 12px;
+        padding: 8px 16px;
+      }
     }
   </style>
 </head>
@@ -153,26 +210,54 @@
 <body>
   <h1>
     <img class="logo" src="
-https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh" alt="Your Logo">
-    eosdev.eth
+https://gateway.pinata.cloud/ipfs/QmPiE7pwkP3TfFMsqSE1Qp1PB7AdrWJUjao8eFLowY5sdh" alt="Your Logo" />
+    eosdev.eth &#128039 &#9889
   </h1>
 
-  <p>Just a simple landing page for my socials.</p>
   <button class="button" onclick="toggleDarkMode()">🌜/🌞</button>
-  
-  <div class="social-container">
-    <button><a href="https://iris.to/eosdev">Nostr</a></button>
-    <button><a href="https://twitter.com/eosdev_">Twitter</a></button>
-    <button><a href="https://beta.howl.social">Howl</a></button>
-    <button><a href="https://t.me/eosdev_eth">Telegram</a></button>
-    <button><a href="https://mstdn.social/@eosdev">Mastodon</a></button>
-  </div>
- 
 
+  <div class="social-container">
+    <a href="https://iris.to/eosdev"><button class="link">Nostr</button></a>
+    <a href="https://twitter.com/eosdev_"><button class="link">Twitter</button></a>
+    <a href="https://beta.howl.social"><button class="link">Howl</button></a>
+    <a href="https://t.me/eosdev_eth"><button class="link">Telegram</button></a>
+    <a href="https://mstdn.social/@eosdev"><button class="link">Mastodon</button></a>
+  </div>
+  <div class="btc">
+    <h1>$BTC: <span id="btc-price"></span><br>$ATOM: <span id="atom-price"></span></h1>
+  </div>
+  <footer></footer>
+  <!-- JS for dark mode -->
   <script>
     function toggleDarkMode() {
+      const darkMode = window.localStorage.getItem("darkMode");
+      window.localStorage.setItem("darkMode", darkMode === "true" ? false : true);
       document.body.classList.toggle("dark-mode");
     }
+
+    function init() {
+      const darkMode = window.localStorage.getItem("darkMode");
+      if (darkMode === "true") {
+        document.body.classList.toggle("dark-mode");
+      }
+    }
+    init();
+  </script>
+
+  <!-- Fetch BTC and ATOM price -->
+  <script>
+    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,cosmos&vs_currencies=usd';
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        const btcPrice = data.bitcoin.usd;
+        const atomPrice = data.cosmos.usd;
+        document.getElementById('btc-price').innerText = `$${btcPrice}`;
+        document.getElementById('atom-price').innerText = `$${atomPrice}`;
+      })
+      .catch(error => {
+        console.error('Error fetching crypto prices:', error);
+      });
   </script>
 </body>
 
